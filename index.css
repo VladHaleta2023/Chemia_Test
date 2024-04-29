@@ -1,0 +1,30 @@
+input {
+    width: 25px;
+    height: 25px;
+    background-color: cornflowerblue;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin: 6px;
+}
+
+input#zadanie {
+    cursor: auto;
+    border: 1px solid cornflowerblue;
+    background-color: white;
+    width: 200px;
+    font-size: 24px;
+}
+
+button {
+    padding: 12px 24px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
