@@ -1,0 +1,153 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    word-break: break-word;
+}
+
+header {
+    background-color: cornflowerblue;
+    color: white;
+    padding: 16px;
+    font-size: 24px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    word-break: break-all;
+    font-size: 16px;
+    padding: 24px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+img {
+    margin: 24px;
+    max-width: 400px;
+    width: 80%;
+}
+
+select {
+    border: 1px solid cornflowerblue;
+    font-size: 20px;
+}
+
+select.image {
+    width: 40px;
+}
+
+div.image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+div {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+progress#resultProgressBar {
+    width: 100%;
+    max-width: 500px;
+}
+
+.back {
+    background-color: red; 
+    color: white;  
+    padding: 6px 12px;
+    border-color: red; 
+    border-radius: 16px; 
+    position: absolute; 
+    left: 6px;
+    top: 6px;
+}
+
+input {
+    min-width: 25px;
+    min-height: 25px;
+    width: 25px;
+    height: 25px;
+    background-color: cornflowerblue;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin: 6px;
+}
+
+input#zadanie {
+    cursor: auto;
+    border: 1px solid cornflowerblue;
+    background-color: white;
+    width: 200px;
+    font-size: 24px;
+}
+
+button {
+    padding: 12px 24px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.select_polisacharydy {
+    width: 300px;
+}
+
+td, th {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 24px;
+    border: 1px solid rgb(202, 202, 202);
+    font-size: 18px;
+    width: 460px;
+}
+
+td.head {
+    background-color: #abf7b1;
+    font-weight: bold;
+}
+
+div.table_body {
+    overflow-x: scroll;
+}
+
+img.zadanie10 {
+    width: 100%;
+    max-width: 600px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+td.title {
+    background-color: rgb(214, 255, 255);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        display: flex;
+    }
+
+    #title_test {
+        margin-left: 52px;
+    }
+}

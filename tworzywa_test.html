@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Chemia Test</title>
+</head>
+<script src="tworzywa.js"></script>
+<body>
+    <header>
+        <a href="index.html" class="back"><i class="material-icons" style="font-size: 28px; padding-top: 3px" title="Back">home</i></a>
+        <span id="title_test">Tworzywa i włókna białkowe oraz celulozowe</span>
+    </header>
+    <main>
+        <div id="ResultBlog" style="display: none; font-size: 48px;" class="bold">
+            <span id="resultTextPercent">0%</span>
+            <progress id="resultProgressBar" value="0" max="100"></progress>
+        </div>
+        <h1>1. Uzupełnij dokładne zakończenia zdania? (2 pkt.)</h1>
+        <div>
+            <span class="bold">Wełna</span> zawiera białko -
+            <select>
+                <option value="No">Orotonian kreatyny</option>
+                <option value="Yes">Keratynę</option>
+                <option value="No">Dekanonian kreatyny</option>
+                <option value="No">Glukonian kreatyny</option>
+            </select>
+            , które występuje m.in. w sierści zwierząt.<span> Włókna bawełny</span> są zbudowane z
+            <select>
+                <option value="Yes">celulozy</option>
+                <option value="No">glukozy</option>
+                <option value="No">fruktozy</option>
+            </select>
+        </div>
+        <br>
+        <br>
+        <h1>2. Jakie włókna są naturalne (tylko 3 odpowiedzi są dokładne, niedokładna odpowiedź -0.5 pkt.)? (3 pkt.)</h1>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox1" value="Yes">
+            <span>Mineralne</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox1" value="No">
+            <span>Nieorganiczne</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox1" value="No">
+            <span>Sztuczne</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox1"  value="Yes">
+            <span>Roślinne</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox1"  value="No">
+            <span>Biologiczne</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox1"  value="Yes">
+            <span>Zwierzęce</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox1"  value="No">
+            <span>Syntetyczne</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox1" value="No">
+            <span>Chemiczne</span>
+        </label>
+        <br>
+        <br>
+        <h1>3. Jakie są zalety bawełny? (tylko 2 odpowiedzi są dokładne, niedokładna odpowiedź -0.25 pkt.)? (2 pkt.)</h1>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox2" value="No">
+            <span>Mają właściwości antybakteryjne</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox2" value="No">
+            <span>Nie przepuszczają szkodliwego promieniowania UV</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox2" value="No">
+            <span>Absorbują promieniowanie UV</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox2" value="No">
+            <span>Higroskopijne - zatrzymują wilgoć i wchłaniają pot</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox2"  value="Yes">
+            <span>Higroskopijne - mogą zawierać do 30% wilgości, dlatego chłoną pot</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox2"  value="No">
+            <span>Mało odporne na wysoką temperaturę</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox2"  value="Yes">
+            <span>Przewiewne</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox2"  value="No">
+            <span>Wrażliwe na promieniowanie słoneczne</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox2"  value="No">
+            <span>Nieodporne na pleśń</span>
+        </label>
+        <br>
+        <br>
+        <h1>4. Co jest najcieńszym włóknem naturalnym, które wytwarza gąsienica motyla jedwabnika? (3 pkt.)</h1>
+        <input type="text" name="zadanie4" id="zadanie">
+        <button style="background-color: green; margin-right: 12px;" onclick="getAnswer()">Pokaż/Ukryj odpowiedź</button>
+        <span style="display: none;" id="answer4">Jedwab motyla</span>
+        <br>
+        <br>
+        <h1>5. Z czego otrzymuje się <a href="https://pl.wikipedia.org/wiki/Kauczuk" target="_blank" class="linkText">kauczuk</a>? (3 pkt.)</h1>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio1"  value="No">
+            <span>Z soku siarkowego kauczukowca hiszpańskiego</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio1"  value="No">
+            <span>Z soku siarkowego kauczukowca brazylijskiego</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio1"  value="No">
+            <span>Z soku z brzozy</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio1"  value="Yes">
+            <span>Z soku mlecznego kauczukowca brazylijskiego</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio1"  value="No">
+            <span>Z soku mlecznego kauczukowca hiszpańskiego</span>
+        </label>
+        <br>
+        <br>
+        <h1>6. Co to jest celuloza? (4 pkt.)</h1>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio2"  value="No">
+            <span>To podstawowy surowiec do wytwarzania wielu polimerów sztucznych. Produktem sukcesu jest cukier lub ebonit</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio2"  value="No">
+            <span>To podstawowy surowiec do wytwarzania wielu polimerów naturalnych. Produktem sukcesu jest cukier lub guma</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio2"  value="No">
+            <span>To podstawowy surowiec do wytwarzania wielu polimerów naturalnych. Produktem sukcesu jest guma lub ebonit</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio2"  value="Yes">
+            <span>To podstawowy surowiec do wytwarzania wielu polimerów sztucznych. Produktem sukcesu jest guma lub ebomit</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio2"  value="No">
+            <span>To podstawowy surowiec do wytwarzania jednego polimera sztucznego. Produktem sukcesu jest cukier lub aminokwas</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio2"  value="No">
+            <span>To podstawowy surowiec do wytwarzania jednego polimera sztucznego. Produktem sukcesu jest guma lub aminokwas</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio2"  value="No">
+            <span>To podstawowy surowiec do wytwarzania jednego polimera naturalnego. Produktem sukcesu jest cukier lub guma</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio2"  value="No">
+            <span>To podstawowy surowiec do wytwarzania jednego polimera naturalnego. Produktem sukcesu jest guma lub ebonit</span>
+        </label>
+        <br>
+        <br>
+        <h1>7. Uporządkuj typ odpadu do przykładu: (5 pkt.)</h1>
+        <div>
+            A: Szkło
+            <br>
+            B: Papier
+            <br>
+            C: Tworzywa sztuczne i metale
+            <br>
+            D: Bioodpady z gospodarstw domowych
+            <br>
+            E: Zmieszane
+        </div>
+        <div>
+            <div class="image">
+                <img src="papier.jpg" alt="Papier">
+                <select class="image">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                </select>
+            </div>
+            <div class="image">
+                <img src="metalPlastyk.webp" alt="Tworzywa sztuczne i metale">
+                <select class="image">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                </select>
+            </div>
+            <div class="image">
+                <img src="glass.jpg" alt="Szkło">
+                <select class="image">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                </select>
+            </div>
+            <div class="image">
+                <img src="zmieszane.jpg" alt="Zmieszane">
+                <select class="image">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                </select>
+            </div>
+            <div class="image">
+                <img src="bioodpady.jpg" alt="Bioodpady z gospodarstw domowych">
+                <select class="image">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <br>
+        <h1>8. Prawda/Fałsz: (6 pkt.)</h1>
+        <div>
+            1. Czy prawda, że niemiecki chemik Christian Schonbein rozlał mieszaninę kwasu azotowego(V) z kwasem siarkowym(VI),
+            wytarł plamę tkaniną bawełnianą, a następnie rozwiesił ją na piecu?
+            <select>
+                <option value="No">None</option>
+                <option value="Yes">Prawda</option>
+                <option value="No">Fałsz</option>
+            </select>
+        </div>
+        <div>
+            2. Czy prawda, że materiał wybuchowy - ester kwasu nieorganicznego - azotan(V) celulozy, nazywamy bawełną szttelniczą (nitrocelulozą)?
+            <select>
+                <option value="No">None</option>
+                <option value="Yes">Prawda</option>
+                <option value="No">Fałsz</option>
+            </select>
+        </div>
+        <div>
+            3. Czy prawda, że segregacja, utylizacja, recykling, redystrybucja i przemieszczanie - to sposoby zagospodarowania odpadów?
+            <select>
+                <option value="Yes">None</option>
+                <option value="No">Prawda</option>
+                <option value="Yes">Fałsz</option>
+            </select>
+        </div>
+        <div>
+            4. Czy prawda, że trwałość tworzyw sztucznych jest ich tylko zaletą (bez wadów)?
+            <select>
+                <option value="No">None</option>
+                <option value="No">Prawda</option>
+                <option value="Yes">Fałsz</option>
+            </select>
+        </div>
+        <div>
+            5. Czy prawda, że maski ochronnne składa się tylko z jednej warstwy?
+            <select>
+                <option value="No">None</option>
+                <option value="No">Prawda</option>
+                <option value="Yes">Fałsz</option>
+            </select>
+        </div>
+        <div>
+            6. Czy prawda, że polar ma lepsze właściwości termoizolacyjne niż wełna?
+            <select>
+                <option value="No">None</option>
+                <option value="Yes">Prawda</option>
+                <option value="No">Fałsz</option>
+            </select>
+        </div>
+        <br>
+        <br>
+        <h1>9. Jakie są zalety szklanego rodzaju opakowania? (tylko 8 odpowiedzi są dokładne, niedokładna odpowiedź -0.5 pkt.)? (8 pkt.)</h1>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox3"  value="No">
+            <span>duża wytrzymałość</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox3"  value="No">
+            <span>duża masa w stosunku do masy przechowywanego produktu</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox3"  value="Yes">
+            <span>odporne chemicznie</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox3"  value="No">
+            <span>łatwe do stłuszczenia</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox3"  value="Yes">
+            <span>nie przepuszczają zapachów</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox3"  value="Yes">
+            <span>przezroczyste</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox3"  value="Yes">
+            <span>ich powierzchnia jest odporna na zarysowania</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox3"  value="No">
+            <span>ulegają rokkładowi w warunkach naturalnych</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox3"  value="No">
+            <span>mała wytrzymałość</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox3"  value="No">
+            <span>możliwość przepuszczania szkodliwych dodatków tworzyw sztucznych do przechowywanych produktów</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox3"  value="Yes">
+            <span>możliwość do wielokrotnego stosowania</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox3"  value="Yes">
+            <span>można im łatwo nadać różne kształty</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox3"  value="Yes">
+            <span>ciemne szkło nie przepuszcza promieniowania UV</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox3"  value="No">
+            <span>nie ulegają rozkładowi w warunkach naturalnych</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox3"  value="Yes">
+            <span>łatwe do umycia</span>
+        </label>
+        <br>
+        <br>
+        <br>
+        <h1>10. Zadanie: (8 pkt.)</h1>
+        <div>
+            <div>Poniżej przedstawiono wzór kauczuku naturalnego:</div>
+            <img src="tw_zadanie.svg" alt="Kauczuk naturalnego">
+            <div>W laboratorium ten związek można otrzymać w reakcji polimeryzacji:</div>
+            <label role="radio" class="radio">
+                <input type="radio" name="radio3"  value="No">
+                <span>2-metylobut-1-enu</span>
+            </label>
+            <label role="radio" class="radio">
+                <input type="radio" name="radio3"  value="Yes">
+                <span>2-metylobuta-1,3-dienu</span>
+            </label>
+            <label role="radio" class="radio">
+                <input type="radio" name="radio3"  value="No">
+                <span>2-metylobut-2-enu</span>
+            </label>
+            <label role="radio" class="radio">
+                <input type="radio" name="radio3"  value="No">
+                <span>2-metylobuta-1,2-dienu</span>
+            </label>
+        </div>
+        <br>
+        <br>
+        <button style="background-color: cornflowerblue;" onclick="getResult()">Wsprawdź</button>
+    </main>
+    <script>
+        function getAnswer() {
+            answer4 = document.getElementById("answer4");
+
+            if (answer4.style.display == "none")
+                answer4.style.display = "inline-block"
+            else
+                answer4.style.display = "none"
+        }
+    </script>
+</body>

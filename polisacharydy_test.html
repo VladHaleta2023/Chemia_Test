@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Chemia Test</title>
+</head>
+<script src="polisacharydy.js"></script>
+<body>
+    <header>
+        <a href="index.html" class="back"><i class="material-icons" style="font-size: 28px; padding-top: 3px" title="Back">home</i></a>
+        <span id="title_test">Polisacharydy</span>
+    </header>
+    <main>
+        <div id="ResultBlog" style="display: none; font-size: 48px" class="bold">
+            <span id="resultTextPercent">0%</span>
+            <progress id="resultProgressBar" value="0" max="100"></progress>
+        </div>
+        <h1>1. Uzupełnij zdania: (3 pkt.)</h1>
+        <div>
+            Środowisko przyrodnicze, a przede wszystkim królewstwo roślin, jest pełne 
+            <select>
+                <option value="No">monosacharydów</option>
+                <option value="No">aminokwasów</option>
+                <option value="Yes">polisacharydów</option>
+                <option value="No">cukrów</option>
+            </select>.
+            <select>
+                <option value="No">Glukoza</option>
+                <option value="No">Sacharoza</option>
+                <option value="Yes">Celuloza</option>
+            </select> jest materiałem budulcowym i głównym składnikiem ścian komórkowych roślin.
+            Z kolei 
+            <select>
+                <option value="No">amylopektyna</option>
+                <option value="No">amyloza</option>
+                <option value="No">peptyd</option>
+                <option value="Yes">skrobia</option>
+            </select> służy jako materiał zapasowy. Występuje głównie w korzeniach, bulwach, a także w nasionach i owocach.
+        </div>
+        <br>
+        <br>
+        <h1>2. Co to są polisacharydy? (3 pkt.)</h1>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio1" value="No">
+            <span>To wielofunkcyjne pochodne węglowodorów, których cząsteczki powstają w wyniku reakcji kondensacji <span class="bold">dwóch cząsteczek monosacharydów</span>.</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio1" value="No">
+            <span>To wielofunkcyjne pochodne węglowodorów, które zawierają w cząsteczkach:<br><span class="bold">grupy hydroksylowe - OH</span> oraz <span class="bold">grupę aldehydową -CHO</span> lub <span class="bold">grupę karbonylową =C=O</span></span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio1" value="No">
+            <span>To wielofunkcyjne pochodne węglowodorów, które powstały w wyniku reakcji kondensacji więcej niż <span class="bold">8</span> cząsteczek monosacharydów</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio1" value="Yes">
+            <span>To wielofunkcyjne pochodne węglowodorów, które powstały w wyniku reakcji kondensacji więcej niż <span class="bold">10</span> cząsteczek monosacharydów</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio1" value="No">
+            <span>To pochodne kwasów karboksylowych, w których cząsteczkach oprócz <span class="bold">grupy karboksylowej - COOH</span> jest też <span>grupa aminowa - NH2</span>.<br>Należa do <span class="bold">wielofunckyjnych pochodnych węglowodorów</span>.</span>
+        </label>
+        <br>
+        <br>
+        <h1>3. Jak są zbudowane polisacharydy? (3 pkt.)</h1>
+        <div>
+            Polisacharydy zawierają w cząsteczce grupy
+            <select>
+                <option value="No">hydroksylowe - COOH</option>
+                <option value="Yes">hydroksylowe - OH</option>
+                <option value="No">hydroksylowe - COH</option>
+            </select> oraz
+            <select>
+                <option value="Yes">wiązanie O-glikozydowe</option>
+                <option value="No">wiązanie P-glikozydowe</option>
+                <option value="No">wiązanie A-glikozydowe</option>
+            </select>. Reszty mogą być
+            <select>
+                <option value="No">wielofunkcyjne lub standardowe</option>
+                <option value="No">jednakowe lub wielofunkcyjne</option>
+                <option value="No">standardowe lub jednakowe</option>
+                <option value="Yes">jednakowe lub różne</option>
+                <option value="No">różne lub standardowe</option>
+            </select>. Najczęściej w przyrodzie polisacharydy - <span class="bold">skrobia i celuloza</span> - składają się wyłącznie z połączonych na różne sposoby reszt glukozowych.
+        </div>
+        <br>
+        <br>
+        <h1>4. Jaki jest wzór ogólny polisacharydów? (3 pkt.)</h1>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio2" value="No">
+            <span>(HO)<sub>m</sub>-R-(COOH)<sub>n</sub></span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio2" value="No">
+            <span>C<sub>n</sub>(H<sub>2</sub>O)<sub>m</sub></span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio2" value="Yes">
+            <span>(C<sub>6</sub>H<sub>10</sub>O<sub>5</sub>)<sub>n</sub></span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio2" value="No">
+            <span>R-CH(NH<sub>2</sub>)-COOH</span>
+        </label>
+        <br>
+        <br>
+        <h1>5. Jak jest zbudowana cząsteczka celulozy? (4 pkt.)</h1>
+        <div>
+            Cząsteczka <span class="bold">celulozy</span> jest zbudowana z długich nierozgałęcionych łańcuchów reszt
+            <select>
+                <option value="No">&alpha;-glukozydowych</option>
+                <option value="Yes">&beta;-glukozydowych</option>
+                <option value="No">&gamma;-glukozydowych</option>
+            </select> połączonych wiązaniami
+            <select>
+                <option value="No">1,4 i 1,6-glikozydowymi</option>
+                <option value="Yes">1,4-glikozydowymi</option>
+                <option value="No">1,6-glikozydowymi</option>
+            </select>.
+        </div>
+        <br>
+        <br>
+        <h1>6. Napisz albo chemiczną reakcję albo nazwę cukru: (5 pkt.)</h1>
+        <div>(C<sub>6</sub>H<sub>10</sub>O<sub>5</sub>)<sub><em>n</em></sub> + <em>n</em>H<sub>2</sub>O (HCl lub enzymy i hydroliza) &rarr; 
+            <input type="text" name="zadanie" id="zadanie"> 
+            <button style="background-color: green; margin-right: 12px;" onclick="getAnswer()">Pokaż/Ukryj odpowiedź</button>
+            <span id="answer" style="display: none;">Glukoza lub nC6H12O6 lub C6H12O6</span>
+        </div>
+        <br>
+        <br>
+        <h1>7. Jak są zbudowana cząsteczka skrobi? (6 pkt.)</h1>
+        <div>
+            Cząsteczka skrobi jest mieszniną dwóch polisacharydów:
+            <select>
+                <option value="No">enzymatycznej hydrolizy</option>
+                <option value="Yes">amylozy</option>
+                <option value="No">amylazy</option>
+            </select> i 
+            <select>
+                <option value="No">enzymatycznej amylopektyny</option>
+                <option value="No">hydrolizy</option>
+                <option value="Yes">amylopektyny</option>
+            </select>.
+            <div class="image">
+                <img src="amylopektyna.png" alt="Amylopektyna">
+                <select class="select_polisacharydy">
+                    <option value="No">enzymatyczna amylopektyna</option>
+                    <option value="No">amyloza</option>
+                    <option value="No">enzymatyczna hydroliza</option>
+                    <option value="No">amylaza</option>
+                    <option value="Yes">amylopektyna</option>
+                    <option value="No">hydroliza</option>
+                    <option value="No">model grupy hydroksylowej</option>
+                    <option value="No">model grupy kwasowej</option>
+                    <option value="No">model wiązania O-glikozydowego</option>
+                    <option value="No">model wiązania A-glikozydowego</option>
+                    <option value="No">model wiązania P-glikozydowego</option>
+                </select>
+            </div>
+            <div class="image">
+                <img src="amyloza.jpg" alt="Amyloza">
+                <select class="select_polisacharydy">
+                    <option value="No">enzymatyczna amylopektyna</option>
+                    <option value="Yes">amyloza</option>
+                    <option value="No">enzymatyczna hydroliza</option>
+                    <option value="No">amylaza</option>
+                    <option value="No">amylopektyna</option>
+                    <option value="No">hydroliza</option>
+                    <option value="No">model grupy hydroksylowej</option>
+                    <option value="No">model grupy kwasowej</option>
+                    <option value="No">model wiązania O-glikozydowego</option>
+                    <option value="No">model wiązania A-glikozydowego</option>
+                    <option value="No">model wiązania P-glikozydowego</option>
+                </select>
+            </div>
+            <div class="image">
+                <img src="wiązanie O-glikozydowe.png" alt="Model wiązania O-glikozydowego">
+                <select class="select_polisacharydy">
+                    <option value="No">enzymatyczna amylopektyna</option>
+                    <option value="No">amyloza</option>
+                    <option value="No">enzymatyczna hydroliza</option>
+                    <option value="No">amylaza</option>
+                    <option value="No">amylopektyna</option>
+                    <option value="No">hydroliza</option>
+                    <option value="No">model grupy hydroksylowej</option>
+                    <option value="No">model grupy kwasowej</option>
+                    <option value="Yes">model wiązania O-glikozydowego</option>
+                    <option value="No">model wiązania A-glikozydowego</option>
+                    <option value="No">model wiązania P-glikozydowego</option>
+                </select>
+            </div>
+            <div class="image">
+                <img src="model hydroksylowy.svg" alt="Model grupy hydroksylowej">
+                <select class="select_polisacharydy">
+                    <option value="No">enzymatyczna amylopektyna</option>
+                    <option value="No">amyloza</option>
+                    <option value="No">enzymatyczna hydroliza</option>
+                    <option value="No">amylaza</option>
+                    <option value="No">amylopektyna</option>
+                    <option value="No">hydroliza</option>
+                    <option value="Yes">model grupy hydroksylowej</option>
+                    <option value="No">model grupy kwasowej</option>
+                    <option value="No">model wiązania O-glikozydowego</option>
+                    <option value="No">model wiązania A-glikozydowego</option>
+                    <option value="No">model wiązania P-glikozydowego</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <br>
+        <h1>8. Uporządkuj nazwy fragmentów do ich zdjęć: (6 pkt.)</h1>
+        <div>
+            A: Fragment cząsteczki amylozy
+            <br>
+            B: Fragment cząsteczki amylopektyny
+            <br>
+            C: Fragment łańcucha celulozy
+        </div>
+        <div class="image">
+            <img src="fragment_amylozy.png" alt="Fragment cząsteczki amylozy">
+            <select style="width: 38px;">
+                <option value="Yes">A</option>
+                <option value="No">B</option>
+                <option value="No">C</option>
+            </select>
+        </div>
+        <div class="image">
+            <img src="fragment celulozy.svg" alt="Fragment łańcuchu celulozy">
+            <select style="width: 38px;">
+                <option value="No">A</option>
+                <option value="No">B</option>
+                <option value="Yes">C</option>
+            </select>
+        </div>
+        <div class="image">
+            <img src="amylopektyna.png" alt="Fragment cząsteczki amylopektyny">
+            <select style="width: 38px;">
+                <option value="No">A</option>
+                <option value="Yes">B</option>
+                <option value="No">C</option>
+            </select>
+        </div>
+        <br>
+        <br>
+        <h1>9. Uzupełnij tabelę: (8 pkt.)</h1>
+        <div class="bold" style="margin-top: 8px;">Porównanie budowy cząsteczek</div>
+        <div class="table_body">
+            <table>
+                <tbody style="display: flex;">
+                    <tr>
+                        <td class="head">Nazwa związku chemicznego</td>
+                        <td class="head">Jednostka strukturalna</td>
+                        <td class="head">Wiązania między resztami monosacharydu</td>
+                        <td class="head">Budowa cząsteczek</td>
+                        <td class="head">Czy jest trawiona w organizmie człowieka</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Skrobia</td>
+                        <td>
+                            <select style="margin-bottom: 3.5px;">
+                                <option value="No">reszta &gamma;-glukozowa</option>
+                                <option value="No">reszta &beta;-glukozowa</option>
+                                <option value="Yes">reszta &alpha;-glukozowa</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select style="margin-bottom: 3.5px;">
+                                <option value="Yes">1,4 glikozydowe i 1,6 glikozydowe</option>
+                                <option value="No">1,4-glikozydowe</option>
+                                <option value="No">1,6 glikozydowe</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select style="margin-bottom: 3.5px;">
+                                <option value="No">łańcuchy proste</option>
+                                <option value="Yes">łańcuchy rozgałęzione</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select style="margin-bottom: 3.5px;">
+                                <option value="No">nie</option>
+                                <option value="Yes">tak</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title">Celuloza</td>
+                        <td>
+                            <select style="margin-bottom: 3.5px;">
+                                <option value="No">reszta &alpha;-glukozowa</option>
+                                <option value="Yes">reszta &beta;-glukozowa</option>
+                                <option value="No">reszta &gamma;-glukozowa</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select style="margin-bottom: 3.5px;">
+                                <option value="No">1,4 glikozydowe i 1,6 glikozydowe</option>
+                                <option value="Yes">1,4-glikozydowe</option>
+                                <option value="No">1,6 glikozydowe</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select style="margin-bottom: 3.5px;">
+                                <option value="No">łańcuchy rozgałęzione</option>
+                                <option value="Yes">łańcuchy proste</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select style="margin-bottom: 3.5px;">
+                                <option value="Yes">nie</option>
+                                <option value="No">tak</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <br>
+        <h1>10. Zadanie: (9 pkt.)</h1>
+        <div>Wśród węglowodanów, w zależności od ich budowy, wyróżnia się monosacharydy – pojedyncze monomery, które mogą tworzyć większe cząsteczki: oligosacharydy (2–10 monomerów), oraz polisacharydy, zbudowane z więcej niż 10 monomerów. Na schemacie I przedstawiono reakcję kondensacji dwóch cząsteczek glukozy (monomeru), w wyniku której powstaje disacharyd, a na schemacie II – dwa disacharydy, z których każdy zbudowany z dwóch różnych monomerów.</div>
+        <img src="zadanie10.png" alt="Zadanie 10">
+        <div>Między dwiema cząsteczkami glukozy podczas reakcji kondensacji powstało wiązanie:</div>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio3" value="No">
+            <span>wodorowe – glikozydowe</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio3" value="Yes">
+            <span>kowalencyjne – glikozydowe</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio3" value="No">
+            <span>kowalencyjne – estrowe</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio3" value="No">
+            <span>jonowe – glikozydowe</span>
+        </label>
+        <br>
+        <br>
+        <button style="background-color: cornflowerblue;" onclick="getResult()">Wsprawdź</button>
+    </main>
+</body>
+</html>

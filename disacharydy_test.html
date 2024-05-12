@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Chemia Test</title>
+</head>
+<script src="disacharydy.js"></script>
+<body>
+    <header>
+        <a href="index.html" class="back"><i class="material-icons" style="font-size: 28px; padding-top: 3px" title="Back">home</i></a>
+        <span id="title_test">Disacharydy</span>
+    </header>
+    <main>
+        <div id="ResultBlog" style="display: none; font-size: 48px;" class="bold">
+            <span id="resultTextPercent">0%</span>
+            <progress id="resultProgressBar" value="0" max="100"></progress>
+        </div>
+        <h1>1. Co to są disacharydy? (1 pkt.)</h1>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio1" value="No">
+            <span>To wielofunkcyjne pochodne węglowodorów, które zawierają w cząsteczkach grupy hydroksylowe - OH oraz grupę aldehydową - CHO lub grupę karbonylową.</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio1" value="Yes">
+            <span>To wielofunkcyjne pochodne węglowodorów, których cząsteczki powstają w wyniku reakcji kondensacji dwóch cząsteczek monosacharydów.</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio1" value="No">
+            <span>To wielofunkcyjne pochodne węglowodorów, które powstały w wyniku reakcji kondensacji więcej niż 10 cząsteczek monosacharydów.</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio1" value="No">
+            <span>To wielofunckyjne pochodne węglowodorów, które są dipeptydami lub polipeptydami.</span>
+        </label>
+        <br>
+        <br>
+        <h1>2. Uporządkuj pojęcie do rysunku: (4 pkt.)</h1>
+        <div>
+            A: Aminokwasy
+            <br>
+            B: Monosacharydy
+            <br>
+            C: Disacharydy
+            <br>
+            D: Polisacharydy
+        </div>
+        <div>
+            <div class="image">
+                <img src="Pol.png" alt="Pol">
+                <select class="image">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+            </div>
+            <div class="image">
+                <img src="Mon.png" alt="Mon">
+                <select class="image">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+            </div>
+            <div class="image">
+                <img src="Amin.png" alt="Amin">
+                <select class="image">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+            </div>
+            <div class="image">
+                <img src="Dis.png" alt="Dis">
+                <select class="image">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <h1>3. Jak są zbudowane disacharydy? (3 pkt.)</h1>
+        <div>
+            Disacharydy zawierają w cząsteczkach
+            <select>
+                <option value="No">grupy hydroksylowe - COH</option>
+                <option value="No">grupy funcyjne - OH</option>
+                <option value="Yes">grupy hydroksylowe - OH</option>
+                <option value="No">grupy funcyjne - COH</option>
+            </select>
+            oraz
+            <select>
+                <option value="No">wiązanie A-glikozydowe</option>
+                <option value="Yes">wiązanie O-glikozydowe</option>
+                <option value="No">wiązanie U-glikozydowe</option>
+            </select>
+            pochodzi od symbolu czemicznego atomu tlenu, którym są za sobą połaczone
+            <select>
+                <option value="No">0 reszt monosacharydowych</option>
+                <option value="No">1 reszta monosacharydowa</option>
+                <option value="Yes">2 reszty monosacharydowe</option>
+                <option value="No">3 reszty monosacharydowe</option>
+                <option value="No">4 reszty monosacharydowe</option>
+            </select>.
+        </div>
+        <br>
+        <br>
+        <h1>4. Jakie są izomery konstytucyjne (tylko 3 odpowiedzi są dokładne, niedokładna -0.25 pkt.)? (3 pkt.)</h1>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox1" value="No">
+            <span>Pochodne</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox1" value="No">
+            <span>Bezpośrednie</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox1" value="Yes">
+            <span>Szkieletowe</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox1"  value="Yes">
+            <span>Funkcyjne</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox1"  value="No">
+            <span>Pośrednie</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox1"  value="No">
+            <span>Emulacyjne</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox1"  value="Yes">
+            <span>Położenia</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox1" value="No">
+            <span>Sacharydowe</span>
+        </label>
+        <br>
+        <br>
+        <h1>5. Sacharoza ulega: (1 pkt.)</h1>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio2" value="Yes">
+            <span>Hydrolizie w obecności kwasu chlorowodorowego</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio2" value="No">
+            <span>Hydrolizie w obecności kwasu siarkowego</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio2" value="No">
+            <span>Hydrolizie w obecności kwasu wodorowego</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio2" value="No">
+            <span>Hydrolizie w obecności kwasu azotowego</span>
+        </label>
+        <br>
+        <br>
+        <h1>6. Prawda/Fałsz: (5 pkt.)</h1>
+        <div>
+            1. Czy prawda, że wzory disacharydów przedstawia się przy użyciu wzorów Hawortha, nazywanych też wzorami Hydrokylowymi?
+            <select>
+                <option value="No">None</option>
+                <option value="No">Prawda</option>
+                <option value="Yes">Fałsz</option>
+            </select>
+        </div>
+        <div>
+            2. Czy prawda, że maltoza daje pozytywny wynik w próbie Tollensa?
+            <select>
+                <option value="No">None</option>
+                <option value="Yes">Prawda</option>
+                <option value="No">Fałsz</option>
+            </select>
+        </div>
+        <div>
+            3. Czy prawda, że hydroliza sacharydów nie zachodzi w układzie trawiennym?
+            <select>
+                <option value="No">None</option>
+                <option value="No">Prawda</option>
+                <option value="Yes">Fałsz</option>
+            </select>
+        </div>
+        <div>
+            4. Czy prawda, że maltoza podobnie jak sacharoza jest substancją gazową?
+            <select>
+                <option value="No">None</option>
+                <option value="No">Prawda</option>
+                <option value="Yes">Fałsz</option>
+            </select>
+        </div>
+        <div>
+            5. Czy prawda, że maltoza - to enzym zawarty w kiełkach?
+            <select>
+                <option value="No">None</option>
+                <option value="Yes">Prawda</option>
+                <option value="No">Fałsz</option>
+            </select>
+        </div>
+        <br>
+        <br>
+        <h1>7. Zastosowania disacharydow (tylko 3 odpowiedzi są dokładne, niedokładna -0.25 pkt.): (3 pkt.)</h1>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox2" value="Yes">
+            <span>Przemysł tworzyw sztucznych</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox2" value="No">
+            <span>Środki czystości</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox2" value="Yes">
+            <span>Przemysł spożywczy</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox2" value="No">
+            <span>Przemysł biologiczny</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox2" value="Yes">
+            <span>Przemysł chemiczny</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="checkbox" name="checkbox2" value="No">
+            <span>Przemysł gazowy</span>
+        </label>
+        <br>
+        <br>
+        <h1>8. Ile w organizmie jest sacharyzy? (3 pkt.)</h1>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio3" value="No">
+            <span>ok. 0.05%</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio3" value="No">
+            <span>ok. 0.1%</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio3" value="Yes">
+            <span>ok. 1%</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio3" value="No">
+            <span>ok. 2%</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio3" value="No">
+            <span>ok. 3%</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio3" value="No">
+            <span>ok. 5%</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio3" value="No">
+            <span>ok. 10%</span>
+        </label>
+        <br>
+        <br>
+        <h1>9. Co to jest RWS? (4 pkt.)</h1>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio4" value="No">
+            <span>Referencyjne Wskaźniki Spożycia</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio4" value="No">
+            <span>Referencyjne Wartości Sacharozy</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio4" value="Yes">
+            <span>Referencyjne Wartości Spożycia</span>
+        </label>
+        <label role="radio" class="radio">
+            <input type="radio" name="radio4" value="No">
+            <span>Referencyjne Wskaźniki Sacharozy</span>
+        </label>
+        <br>
+        <br>
+        <h1>10. Zadanie: (8 pkt.)</h1>
+        <div>
+            Niepasteryzowane mleko, pozostawione w temperaturze pokojowej, kwaśnieje: obecne w nim bakterie mlekowe przekształcają cukier mlekowy, czyli laktozę <br>C12H22O11, w kwas mlekowy o wzorze <br>CH3CH(OH)COOH. Ten proces nazywamy fermentacją mlekową.
+            <br>
+            <br>
+            <div class="bold">
+                Napisz równanie reakcji fermentacji mlekowej laktozy – uzupełnij poniższy schemat. Zastosuj wzór półstrukturalny (grupowy) kwasu mlekowego. <br>Pamiętaj, że w procesie fermentacji mlekowej laktozy uczestniczy woda.
+            </div>
+            <div>
+                C12H22O11 + H2O &rarr;
+                <input type="text" name="zadanie" id="zadanie">
+                <button style="background-color: green; margin-right: 12px;" onclick="getAnswer()">Pokaż/Ukryj odpowiedź</button>
+                <span style="display: none;" id="answer10">4CH3CH(OH)COOH</span>
+            </div>
+        </div>
+        <br>
+        <br>
+        <button style="background-color: cornflowerblue;" onclick="getResult()">Wsprawdź</button>
+    </main>
+</body>
+</html>
